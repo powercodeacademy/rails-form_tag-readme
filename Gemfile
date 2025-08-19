@@ -27,7 +27,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 6.0'
-  gem 'capybara'
+  gem 'capybara', '>= 2.15'
   gem 'database_cleaner-active_record'
 end
 
@@ -38,10 +38,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
-  gem 'rspec-rails', '~> 3.7'
-  gem 'database_cleaner'
 end
